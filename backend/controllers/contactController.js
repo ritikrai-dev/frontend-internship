@@ -11,6 +11,8 @@ const submitContact = (req, res) => {
         });
     }
 
+
+
     const newMessage = {
         id: Date.now(),
         name,
@@ -19,6 +21,9 @@ const submitContact = (req, res) => {
         message
     };
 
+
+
+    
     messages.push(newMessage);
 
     res.status(201).json({
